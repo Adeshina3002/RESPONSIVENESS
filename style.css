@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-col: #333;
+    --text-col: #fff;
+    --foot-col: #ff7600;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    background-color: var(--bg-col);
+    color: var(--text-col);
+    height: 100%;
+    line-height: 2;
+    margin: auto;
+    
+}
+
+.title {
+    background-color: var(--foot-col);
+    padding: 10px;
+    width: 100%;
+    font-size: 24px;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+}
+
+.description {
+    padding-top: 7rem;
+    margin: 0 30px;
+}
+.description p {
+    padding-bottom: 2rem;
+}
+
+.empty-div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.circle {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 50%;
+    margin: 20px auto;
+    
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+footer {
+    background-color: var(--foot-col);
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+span {
+    text-decoration: solid;
+}
+
+@media  (min-width: 480px) and (max-width: 570px) {
+
+    .main-container {
+        height: 100%;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 38px;
+    }
+
+    .description {
+        padding-top: 10rem;
+        font-size: 30px;
+        /* margin: 0 50px; */
+        
+    }
+    .description p {
+        padding-bottom: 4rem;
+    }
+
+    .empty-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .circle {
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        margin: 80px auto;
+        padding: 10px;
+    }
+
+    footer {
+        /* background-color: #333; */
+        text-align: center;
+        font-size: 22px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 571px) {
+    .main-container {
+        height: 100%;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    .description {
+        padding-top: 10rem;
+        font-size: 30px;
+        margin: 0 45px;
+        
+    }
+    .description p {
+        padding-bottom: 4rem;
+    }
+
+    .empty-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .circle {
+        margin: auto;
+        width: 180px;
+        height: 180px;
+        margin: 80px auto;
+        /* padding: 5px; */
+    }
+
+    footer {
+        /* background-color: #333; */
+        text-align: center;
+        font-size: 22px;
+        width: 100%;
+    }
+}
